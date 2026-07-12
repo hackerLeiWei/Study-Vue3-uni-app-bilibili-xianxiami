@@ -80,6 +80,30 @@
 				"navigationBarTitleText": "tab-mine",
 				"enablePullDownRefresh": true //,// 允许下拉刷新
 			}
+		},
+		{
+			"path": "pages/storage/storage",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/net-request/net-request",
+			"style": {
+				"navigationBarTitleText": "Net-Request"
+			}
+		},
+		{
+			"path": "pages/net-request/net-pic-list",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/net-request/net-pic-list2",
+			"style": {
+				"navigationBarTitleText": "Net-pic-list2"
+			}
 		}
 	],
 

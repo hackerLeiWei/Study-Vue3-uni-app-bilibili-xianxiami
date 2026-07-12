@@ -57,7 +57,7 @@
 		line-height: 80rpx; // 行高设置
 		// align-self: center;
 		white-space: nowrap;
-		overflow: hidden;
+		overflow: hidden; // 防止溢出
 		text-overflow: ellipsis;
 	}
 </style>

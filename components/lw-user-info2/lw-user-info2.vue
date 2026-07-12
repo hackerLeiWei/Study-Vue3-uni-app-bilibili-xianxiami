@@ -83,7 +83,7 @@
 			flex-direction: row;
 			align-self: center;
 			white-space: nowrap;
-			overflow: hidden; //防止移除
+			overflow: hidden; //防止溢出
 			text-overflow: ellipsis; // 省略号
 		}
 	}

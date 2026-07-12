@@ -70,7 +70,7 @@
 		console.log(`${event.detail.value}  ${inputValue.value}`)
 		emits('onConfirm', inputValue.value)
 		console.log(input.value)
-		input.value.blur()
+		// input.value.blur()
 	}
 
 	const onCancel = () => {
