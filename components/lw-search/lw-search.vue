@@ -80,8 +80,7 @@
 
 	//----------------------------------------expose---start
 	const resetSearch = function() {
-		console.log("resetSearch")
-		inputValue.value = "resetSearch"
+		inputValue.value = ""
 	}
 	//----------------------------------------expose---end
 

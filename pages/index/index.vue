@@ -19,10 +19,24 @@
 			<text class="menu">页面生命周期</text>
 		</navigator>
 	</view>
+	<view class="flex-column">
+		<navigator url="/pages/scroll-y-v-if/scroll-y-v-if">
+			<text class="menu">scroll-y v-id</text>
+		</navigator>
+	</view>
+	<view class="flex-column">
+		<text class="menu" @click="switchTab">tabs 页面</text>
+	</view>
 </template>
 
 <script setup>
+	const switchTab = () => {
+		uni.switchTab({
+			url: "/pages/tabbar/tab-home"
+		})
+	}
 </script>
+
 <style lang="scss" scoped>
 	.menu {
 		display: flex;

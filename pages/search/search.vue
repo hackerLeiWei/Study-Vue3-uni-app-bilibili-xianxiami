@@ -1,7 +1,7 @@
 <template>
 	<view class="flex-column">
 		<lw-search ref="search" @onConfirm="onConfirm" @onCancel="onCancel"></lw-search>
-		<button type="primary" @click="changeSearch">changeSearch</button>
+		<button type="primary" @click="changeSearch">设置输入框内容："关键字"</button>
 	</view>
 </template>
 
@@ -21,13 +21,19 @@
 	}
 
 	const changeSearch = () => {
-		search.value.inputValue = "changeSearch"
+		search.value.inputValue = "关键字"
 		console.log(search.value)
 		console.log(search.value.inputValue)
 		console.log(search.value.str)
-		setTimeout(()=>{
+		uni.showToast({
+			title: "3秒之后改为重置",
+			icon:'success',
+			position:'center',
+			duration: 2000
+		})
+		setTimeout(() => {
 			search.value.resetSearch()
-		},2000)
+		}, 3000)
 
 	}
 </script>

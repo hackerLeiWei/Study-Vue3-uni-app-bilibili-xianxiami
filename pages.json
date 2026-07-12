@@ -27,7 +27,9 @@
 		{
 			"path": "pages/lifecycle/lifecycle",
 			"style": {
-				"navigationBarTitleText": "lifecycle"
+				"navigationBarTitleText": "lifecycle",
+				"enablePullDownRefresh": true //,// 允许下拉刷新
+				// "disableScroll": true  // 禁用页面滚动
 			}
 		},
 		{
@@ -35,13 +37,91 @@
 			"style": {
 				"navigationBarTitleText": "empty"
 			}
+		},
+		{
+			"path": "pages/scroll-y-v-if/scroll-y-v-if",
+			"style": {
+				"navigationBarTitleText": "scroll-y-v-if",
+				"enablePullDownRefresh": true, //,// 允许下拉刷新
+				"navigationBarTextStyle": "black", // 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+				"navigationBarBackgroundColor": "#ff0" // 状态栏
+			}
+		},
+		{
+			"path": "pages/tabbar/tab-home",
+			"style": {
+				"navigationBarTitleText": "tab-home",
+				"enablePullDownRefresh": true, //,// 允许下拉刷新
+				"navigationBarTextStyle": "black", // 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+				"navigationBarBackgroundColor": "#ff0" // 状态栏
+			}
+		},
+		{
+			"path": "pages/tabbar/tab-msg",
+			"style": {
+				"navigationBarTitleText": "tab-msg",
+				"enablePullDownRefresh": true, //,// 允许下拉刷新
+				"navigationBarTextStyle": "white", // 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+				"navigationBarBackgroundColor": "#f0F" // 状态栏
+			}
+		},
+		{
+			"path": "pages/tabbar/tab-find",
+			"style": {
+				"navigationBarTitleText": "tab-find",
+				"enablePullDownRefresh": true, //,// 允许下拉刷新
+				"navigationBarTextStyle": "black", // 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+				"navigationBarBackgroundColor": "#fff" // 状态栏
+			}
+		},
+		{
+			"path": "pages/tabbar/tab-mine",
+			"style": {
+				"navigationBarTitleText": "tab-mine",
+				"enablePullDownRefresh": true //,// 允许下拉刷新
+			}
 		}
 	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+
+	"tabBar": {
+		// https://uniapp.dcloud.net.cn/collocation/pages.html#tabbar
+		"color": "#8a8a8a",
+		"selectedColor": "#1296db",
+		"backgroundColor": "#fff",
+		"borderStyle": "white",
+		"fontSize": "15rpx",
+		"iconWidth": "36rpx",
+		"spacing": "4rpx",
+		"height": "68rpx",
+		"list": [{
+			"pagePath": "pages/tabbar/tab-home",
+			"text": "首页",
+			"iconPath": "/static/icons/tab-home-0.png",
+			"selectedIconPath": "/static/icons/tab-home-1.png"
+		}, {
+			"pagePath": "pages/tabbar/tab-msg",
+			"text": "消息",
+			"iconPath": "/static/icons/tab-msg-0.png",
+			"selectedIconPath": "/static/icons/tab-msg-1.png"
+		}, {
+			"pagePath": "pages/tabbar/tab-find",
+			"text": "发现",
+			"iconPath": "/static/icons/tab-find-0.png",
+			"selectedIconPath": "/static/icons/tab-find-1.png"
+		}, {
+			"pagePath": "pages/tabbar/tab-mine",
+			"text": "我的",
+			"iconPath": "/static/icons/tab-mine-0.png",
+			"selectedIconPath": "/static/icons/tab-mine-1.png"
+		}]
+	},
+	"globalStyle": { // 所有页面公用的属性，可在页面的 style 中更改
+		"navigationBarTextStyle": "white", // 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+		"navigationBarTitleText": "uni-app", //导航栏标题文字内容
+		"navigationBarBackgroundColor": "#00f", // 状态栏
+		"backgroundColor": "#F8F8F8",
+		"backgroundColor": "#f1f1f1", //HexColor	#ffffff	下拉显示出来的窗口的背景色
+		"backgroundTextStyle": "dark" //String	dark	下拉 loading 的样式，仅支持 dark / light
 	},
 	"uniIdRouter": {}
 }

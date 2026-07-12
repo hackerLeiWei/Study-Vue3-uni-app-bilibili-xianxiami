@@ -39,6 +39,14 @@
 
 <style>
 	/*每个页面公共css */
+
+	.flex-vw-vh {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		width: 100vw;
+	}
+
 	.flex-column {
 		display: flex;
 		flex-direction: column;
@@ -75,5 +83,9 @@
 
 	.title-size {
 		font-size: 50rpx;
+	}
+
+	.content-size {
+		font-size: 40rpx;
 	}
 </style>
