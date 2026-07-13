@@ -1,8 +1,8 @@
 <template>
 	<view class="root">
 		<text>随机毛呢API接口 https://api.thecatapi.com/v1/images/search?limit=10</text>
-		<view class="item" v-for="item in  pets" :key="item._id">
-			<image class="pic" :src="item.url" mode="widthFix"></image>
+		<view class="item" v-for="(item, index) in  pets" :key="item._id">
+			<image class="pic" :src="item.url" mode="widthFix" @click="utils.previewImage(pets.map(it => it.url), index)"></image>
 			<text class="info"> 图片信息 [{{item.type}}] {{content}}</text>
 			<text class="author"> —— {{item.author}}</text>
 		</view>
@@ -10,9 +10,8 @@
 </template>
 
 <script setup>
-	import {
-		ref
-	} from 'vue';
+	import { ref } from 'vue';
+	import * as utils from '@/utils/utils.js'
 
 	/*
 	[{
@@ -36,6 +35,7 @@
 		pets.value = response.data.data
 		console.log(response)
 	})
+
 </script>
 
 <style lang="scss" scoped>

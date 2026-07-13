@@ -2,16 +2,15 @@
 	<view class="root">
 		<text>随机毛呢API接口 https://api.thecatapi.com/v1/images/search?limit=10</text>
 		<view class="item" v-for="item in  pets" :key="item.id">
-			<image class="pic" :src="item.url" mode="widthFix"></image>
+			<image class="pic" :src="item.url" mode="widthFix" @click="utils.previewImage(pets.map(it => it.url), index)"></image>
 			<text class="info">图片信息 {{item.width}}x{{item.height}}</text>
 		</view>
 	</view>
 </template>
 
 <script setup>
-	import {
-		ref
-	} from 'vue';
+	import { ref } from 'vue';
+	import * as utils from '@/utils/utils.js'
 
 	/*
 	[

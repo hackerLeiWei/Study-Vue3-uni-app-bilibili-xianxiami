@@ -1,6 +1,6 @@
 <template>
 	<view class="">
-		<text @click="uni.navigateBack();cancelTimmer">empty, {{leftSecond}} 秒后自动返回</text>
+		<text @click="uni.navigateBack()">empty, {{leftSecond}} 秒后自动返回</text>
 	</view>
 </template>
 
