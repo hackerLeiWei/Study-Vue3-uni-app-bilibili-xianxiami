@@ -1,12 +1,14 @@
 import App from './App'
-
+import store from './store/store' // 1. 引入 store
 // #ifndef VUE3
 import Vue from 'vue'
 import './uni.promisify.adaptor'
 Vue.config.productionTip = false
+Vue.prototype.$store = store
 App.mpType = 'app'
 const app = new Vue({
-	...App
+	...App,
+	store
 })
 app.$mount()
 // #endif
@@ -17,8 +19,10 @@ import {
 } from 'vue'
 export function createApp() {
 	const app = createSSRApp(App)
+	app.use(store); // 引用/注册
 	return {
 		app
 	}
 }
+
 // #endif

@@ -57,6 +57,10 @@
 		flex-direction: row;
 	}
 
+	.margin-bottom {
+		margin-bottom: 20rpx;
+	}
+
 	.bg-f0f0f0 {
 		background-color: #f0f0f0;
 	}

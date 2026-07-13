@@ -1,8 +1,10 @@
 <template>
-	<lw-user-info1></lw-user-info1>
-	<lw-user-info2 user-name="你好" nick-name="Hello" age="33" state="2"></lw-user-info2>
-	<view v-for="item in userItems">
-		<lw-user-info3 :userInfo="item" @clickSayHello="clickSayHello"></lw-user-info3>
+	<view class="flex-column">
+		<lw-user-info1></lw-user-info1>
+		<lw-user-info2 user-name="你好" nick-name="Hello" age="33" state="2"></lw-user-info2>
+		<view v-for="item in userItems">
+			<lw-user-info3 :userInfo="item" @clickSayHello="clickSayHello"></lw-user-info3>
+		</view>
 	</view>
 </template>
 

@@ -104,6 +104,12 @@
 			"style": {
 				"navigationBarTitleText": "Net-pic-list2"
 			}
+		},
+		{
+			"path": "pages/vuex-plugin--store/vuex-plugin--store",
+			"style": {
+				"navigationBarTitleText": "Vuex-plugin--store"
+			}
 		}
 	],
 

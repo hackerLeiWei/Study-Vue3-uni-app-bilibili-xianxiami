@@ -1,13 +1,15 @@
 <template>
-	<view class="header bg-blue-alpha">
-		<slot name="header"></slot>
-	</view>
-	<view class="content bg-green-alpha">
-		<!-- 无名插槽可以直接接收到引用处标签 -->
-		<slot name="content"></slot>
-	</view>
-	<view class="footer bg-red-alpha">
-		<slot name="footer"></slot>
+	<view class="flex-column">
+		<view class="header bg-blue-alpha">
+			<slot name="header"></slot>
+		</view>
+		<view class="content bg-green-alpha">
+			<!-- 无名插槽可以直接接收到引用处标签 -->
+			<slot name="content"></slot>
+		</view>
+		<view class="footer bg-red-alpha">
+			<slot name="footer"></slot>
+		</view>
 	</view>
 </template>
 
