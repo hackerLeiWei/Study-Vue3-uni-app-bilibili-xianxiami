@@ -27,7 +27,7 @@
 	const store = useStore()
 
 	// 读取 state（响应式）
-	const count = computed(() => store.state.count)
+	const count = computed(() => store.getters["count"])
 	const items = computed(() => store.state.items)
 
 	// 提交 mutation（同步修改）
